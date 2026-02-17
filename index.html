@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOBU | Full-Stack Developer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f172a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='60' font-weight='bold' fill='%2338bdf8' font-family='Inter, sans-serif'%3EG%3C/text%3E%3C/svg%3E">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased bg-slate-900 text-slate-300">
+    <!-- Background Gradient -->
+    <div class="fixed top-0 left-0 h-screen w-full bg-slate-900 -z-10"></div>
+    <div class="background-gradient"></div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#home" class="text-3xl font-extrabold text-white tracking-tighter">GOBU</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none text-slate-300">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800/80 backdrop-blur-sm border-t border-slate-700">
+            <a href="#about" class="block py-3 px-6 text-base text-slate-300 hover:text-white">About</a>
+            <a href="#skills" class="block py-3 px-6 text-base text-slate-300 hover:text-white">Skills</a>
+            <a href="#projects" class="block py-3 px-6 text-base text-slate-300 hover:text-white">Projects</a>
+            <a href="#certifications" class="block py-3 px-6 text-base text-slate-300 hover:text-white">Certifications</a>
+            <a href="#contact" class="block py-3 px-6 text-base text-slate-300 hover:text-white">Contact</a>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 text-left">
+                <div class="max-w-3xl">
+                    <h1 class="text-6xl md:text-8xl font-extrabold text-sky-400 tracking-tighter mb-4">GOBU</h1>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Full-Stack Developer</h2>
+                    <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl">
+                      I develop end-to-end web solutions by utilizing modern technologies and adhering to best practices. From creating responsive frontends to building scalable backend systems, I focus on crafting robust applications that offer users an amazing experience.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="action-button">
+                            Get In Touch
+                        </a>
+                        <a href="src/Resume/Resume.pdf" target="_blank"  class="action-button-outlined">
+                            <i class="ri-download-2-line mr-2"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="mt-12 flex space-x-6">
+                        <a href="https://github.com/gobu01" target="_blank" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-github-fill text-3xl"></i></a>
+                        <a href="https://www.linkedin.com/in/gobu-m-154b13282/" target="_blank" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+                        <a href="mailto:mgobu413@gmail.com" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-mail-fill text-3xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container mx-auto px-6">
+                 <h2 class="section-title">About Me</h2>
+                 <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                    <img src="https://placehold.co/250x250/1e293b/38bdf8?text=G" alt="Portrait of Gobu" class="rounded-full w-48 h-48 md:w-56 md:h-56 shadow-lg flex-shrink-0 border-4 border-sky-500/50">
+                    <div class="text-center md:text-left">
+                        <p class="text-lg text-slate-400 mb-4">
+                           Hello! I'm Gobu, a full-time Full-Stack Developer who loves creating user-friendly and effective web applications. I began my tech journey with an interest in how things function, and this curiosity propelled me into exploring both the front-end and back-end of development.
+
+I live for problem-solving and constant learning of new technologies. My aim is to utilize my abilities to design meaningful products that are technically correct and user-friendly as well.
+                        </p>
+                        <p class="text-lg text-slate-400">
+                            I specialize in creating dynamic and interactive UI/UX experience. I stay up to date with the latest tools and techniques and worked on a wide range of projects, from personal websites to large-scale applications, sharpening my problem solving skills and fostering creativity.
+
+If you're seeking a dedicated and passionate web developer, I'm eager to collaborate with you. Let's bring your ideas to life!
+                        </p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="skill-card p-6 text-center">
+                        <h3 class="text-xl font-bold text-slate-200 mb-2">Frontend</h3>
+                        <p class="text-slate-400">React, Next.js, Vue, Tailwind CSS, HTML5, CSS3</p>
+                    </div>
+                    <div class="skill-card p-6 text-center">
+                        <h3 class="text-xl font-bold text-slate-200 mb-2">Backend</h3>
+                        <p class="text-slate-400">Node.js, Express, Python, Django, REST APIs</p>
+                    </div>
+                    <div class="skill-card p-6 text-center">
+                        <h3 class="text-xl font-bold text-slate-200 mb-2">Databases</h3>
+                        <p class="text-slate-400">MongoDB, PostgreSQL, MySQL, Firebase</p>
+                    </div>
+                    <div class="skill-card p-6 text-center">
+                        <h3 class="text-xl font-bold text-slate-200 mb-2">Tools & DevOps</h3>
+                        <p class="text-slate-400">Git, Docker, Jenkins, AWS, Vercel</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="project-card overflow-hidden flex flex-col">
+                        <img src="src/Project/apex.png" alt="Project One Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-200 mb-2">Apex Electronics E-Commerce Platform</h3>
+                            <p class="text-slate-400 mb-4 flex-grow">A full-featured online store built with html,css,js.build with firebase backend.</p>
+                            <div class="flex-shrink-0 flex justify-end space-x-4">
+                                <a href=" https://gobu01.github.io/apex-electronics/" class="text-sky-400 font-semibold hover:underline" target="_blank">Live Demo</a>
+                                <a href="https://github.com/gobu01/apex-electronics" class="text-slate-400 font-semibold hover:text-sky-400" target="_blank"><i class="ri-github-fill text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card overflow-hidden flex flex-col">
+                        <img src="src/Projects/TaskManagement.png" alt="Project Two Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-200 mb-2">Task Management App</h3>
+                            <p class="text-slate-400 mb-4 flex-grow">A collaborative and simple task manager with real-time updates</p>
+                            <div class="flex-shrink-0 flex justify-end space-x-4">
+                                <a href="https://gobu-m.github.io/Task-Management/" target="_blank" class="text-sky-400 font-semibold hover:underline">Live Demo</a>
+                                <a href="https://github.com/GOBU-M/Task-Management" target="_blank" class="text-slate-400 font-semibold hover:text-sky-400"><i class="ri-github-fill text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Project+Three" alt="Project Three Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-200 mb-2">Personal Portfolio API</h3>
+                            <p class="text-slate-400 mb-4 flex-grow">A RESTful API built with Django to power a headless CMS for a personal blog and portfolio.</p>
+                            <div class="flex-shrink-0 flex justify-end space-x-4">
+                                <a href="#" class="text-sky-400 font-semibold hover:underline">API Docs</a>
+                                <a href="#" class="text-slate-400 font-semibold hover:text-sky-400"><i class="ri-github-fill text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications Section -->
+        <section id="certifications" class="section-padding">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Certifications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                     <!-- NOTE: Ensure filenames match your uploaded images in 'src/certificates/' -->
+                     <a href="#" class="certificate-link cert-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/Python&Django.jpg">
+                        <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-slate-200">The Complete Django Web Development Course</h3>
+                            <p class="text-slate-400">Udemy</p>
+                        </div>
+                         <div class="text-slate-500 group-hover:text-sky-400 transition-colors">
+                           <i class="ri-eye-line text-xl"></i>
+                        </div>
+                    </a>
+                     <a href="#" class="certificate-link cert-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/AIForBeginers.jpg">
+                        <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-slate-200">AI for Beginners</h3>
+                            <p class="text-slate-400">HP LIFE</p>
+                        </div>
+                         <div class="text-slate-500 group-hover:text-sky-400 transition-colors">
+                           <i class="ri-eye-line text-xl"></i>
+                        </div>
+                    </a>
+                     <a href="#" class="certificate-link cert-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/DeveloperAndTechnologyJobSimulation.jpg">
+                        <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-slate-200">Developer and Technology Job Simulation</h3>
+                            <p class="text-slate-400">Forage / Accenture</p>
+                        </div>
+                         <div class="text-slate-500 group-hover:text-sky-400 transition-colors">
+                           <i class="ri-eye-line text-xl"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="certificate-link cert-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/SoftwareEngineeringJobSimulaton.jpg">
+                        <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-slate-200">Software Engineering Job Simulation</h3>
+                            <p class="text-slate-400">Forage / Hewlett Packard Enterprise</p>
+                        </div>
+                         <div class="text-slate-500 group-hover:text-sky-400 transition-colors">
+                           <i class="ri-eye-line text-xl"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="certificate-link cert-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/Git&Github.jpg">
+                        <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-slate-200">Git & GitHub Bootcamp</h3>
+                            <p class="text-slate-400">LetsUpgrade</p>
+                        </div>
+                         <div class="text-slate-500 group-hover:text-sky-400 transition-colors">
+                           <i class="ri-eye-line text-xl"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Contact Information</h2>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <!-- Contact Form -->
+                   <div>
+                        <h3 class="text-2xl font-bold text-slate-100 mb-6">Send a Message</h3>
+                        <form action="https://formspree.io/f/xjkeqokw" method="POST" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" class="form-input" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-slate-400 mb-2">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your Email ID" class="form-input" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-slate-400 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-400 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message..." class="form-input" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="action-button w-full">Send Message</button>
+                            </div>
+                        </form>
+                        <!-- Form Status Message -->
+                        <div id="form-status" class="mt-4 text-center text-sm"></div>
+                    </div>
+                    <!-- Contact Details -->
+                    <div class="space-y-8">
+                         <h3 class="text-2xl font-bold text-slate-100 mb-6">Contact Details</h3>
+                        <div class="contact-info-item flex items-center space-x-4">
+                            <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-mail-fill text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Email</h4>
+                                <a href="mailto:mgobu413@gmail.com" class="text-slate-400 hover:text-sky-400 transition-colors">mgobu413@gmail.com</a>
+                            </div>
+                        </div>
+                         <div class="contact-info-item flex items-center space-x-4">
+                            <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-phone-fill text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Phone</h4>
+                                <a href="tel:+917904227934" class="text-slate-400 hover:text-sky-400 transition-colors">+91-7904227934</a>
+                            </div>
+                        </div>
+                         <div class="contact-info-item flex items-center space-x-4">
+                            <div class="bg-sky-500/10 text-sky-400 rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-map-pin-2-fill text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Location</h4>
+                                <p class="text-slate-400">Chennai, India</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-slate-800 flex space-x-6">
+                           <a href="https://github.com/gobu01" target="_blank" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-github-fill text-3xl"></i></a>
+                           <a href="https://www.linkedin.com/in/gobu-m-154b13282/" target="_blank" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+                           <a href="mailto:mgobu413@gmail.com" target="_blank" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-mail-fill text-3xl"></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-500">
+             <div class="mb-4">
+                
+                <div class="flex justify-center space-x-4">
+                    
+                </div>
+            </div>
+            <p>&copy; 2025 GOBU. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-[999] hidden">
+        <div class="bg-slate-800 p-2 rounded-lg max-w-4xl max-h-[90vh] relative shadow-2xl shadow-sky-500/20">
+            <img id="modal-img" src="" alt="Certificate" class="object-contain max-w-full max-h-[85vh] rounded-md">
+            <button id="modal-close-button" class="absolute -top-4 -right-4 text-slate-300 bg-slate-800 rounded-full h-10 w-10 flex items-center justify-center hover:bg-sky-400 hover:text-slate-900 transition-colors text-2xl leading-none">&times;</button>
+        </div>
+    </div>
+
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
+
+
